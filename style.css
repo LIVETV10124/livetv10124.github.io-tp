@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.card.focused {
+  box-shadow: 0 0 10px 5px rgba(0, 123, 255, 0.5);
+}
